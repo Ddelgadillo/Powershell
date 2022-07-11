@@ -1,0 +1,1 @@
+ Get-ADUser -Server "atlanticplywood.local" -Filter * -Properties * | Select-Object GivenName, sn, Company, EmailAddress, Department, Title, Office, Manager | export-csv -path C:\Users\ddelgadillo\Documents\APCUserExport.csv
